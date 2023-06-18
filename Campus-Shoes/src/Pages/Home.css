@@ -1,0 +1,35 @@
+.Corousel-Image {
+    position: relative;
+}
+
+.left-arrow {
+    position: absolute;
+    top: 43.5%;
+    left: 0;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.left-arrow:hover {
+    opacity: 1.0;
+}
+
+.right-arrow {
+    position: absolute;
+    top: 43.5%;
+    right: 0;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.right-arrow:hover {
+    opacity: 1.0;
+}
+
+.slide {
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+}
