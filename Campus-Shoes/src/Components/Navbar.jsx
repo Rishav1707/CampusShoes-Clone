@@ -3,6 +3,8 @@ import search from "../assets/Search.svg";
 import wishlist from "../assets/Like.svg";
 import cart from "../assets/Cart.svg";
 import store from "../assets/Location2.svg";
+import hamburger from "../assets/hamburger.svg";
+import profile from "../assets/Profile.svg";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
@@ -37,6 +39,16 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
+      <div className="Mobile-Navbar-left">
+        <ul>
+          <li>
+            <img src={hamburger} />
+          </li>
+          <li>
+            <img src={search} />
+          </li>
+        </ul>
+      </div>
       <div className="Navbar-logo">
         <Link to="/">
           <img src={logo} />
@@ -49,7 +61,8 @@ export default function Navbar() {
           </li>
           <li>
             <Link to="/search">Search </Link>
-            <img src={search} />
+            <img className="search-icon" src={search} />
+            <img className="profile-icon" src={profile} />
           </li>
           <li>
             <Link to="/pages/wishlist">Wishlist</Link>

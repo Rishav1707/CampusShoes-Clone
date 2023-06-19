@@ -1,0 +1,65 @@
+.Desktop-Corousel-Image {
+    position: relative;
+}
+
+.Mobile-Corousel-Image {
+    display: none;
+}
+
+.left-arrow {
+    position: absolute;
+    top: 43.5%;
+    left: 0;
+    opacity: 0.75;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.left-arrow:hover {
+    opacity: 1.0;
+}
+
+.right-arrow {
+    position: absolute;
+    top: 43.5%;
+    right: 0;
+    opacity: 0.75;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.right-arrow:hover {
+    opacity: 1.0;
+}
+
+.slide {
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    filter: brightness(0.9);
+}
+
+@media only screen and (max-width: 768px) {
+    .Desktop-Corousel-Image {
+        display: none;
+    }
+
+    .Mobile-Corousel-Image {
+        position: relative;
+        display: block;
+    }
+
+    .left-arrow {
+        top: 86.5%;
+        left: 45%;
+        opacity: 1.0;
+    }
+
+    .right-arrow {
+        top: 86.5%;
+        right: 45%;
+        opacity: 1.0;
+    }
+}
