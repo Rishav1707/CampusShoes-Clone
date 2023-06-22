@@ -1,0 +1,97 @@
+.New-Arrivals-Container {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.New-Arrivals-Heading {
+    position: relative;
+}
+
+.left-Arrow {
+    position: absolute;
+    top: 20%;
+    left: 41%;
+}
+
+.right-Arrow {
+    position: absolute;
+    top: 20%;
+    right: 41%;
+}
+
+.New-Arrivals-Heading h1 {
+    margin: 0;
+    font-family: "New York", Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.View-all {
+    display: flex;
+    justify-content: center;
+}
+
+.View-all h4 {
+    color: #c16452;
+    border-bottom: 1px solid #c16452;
+    padding-bottom: 1px;
+    font-size: .75em;
+    font-weight: 500;
+    font-family: Futura, sans-serif;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.New-Arrivals {
+    display: flex;
+    justify-content: start;
+    gap: 1.875rem;
+    margin-top: 1.5rem;
+    overflow-x: scroll;
+}
+
+.New-Arrivals-Product {
+    font-family: Futura, sans-serif;
+    color: #171717;
+}
+
+.Wishlist-button {
+    display: flex;
+    justify-content: end;
+}
+
+.New-Arrivals-Image {
+    width: 18.813rem;
+    height: 28.125rem;
+}
+
+.Products-Details {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.Products-Details h4 {
+    margin-top: 0;
+    margin-bottom: 0.625rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Product-Price {
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-style: normal;
+    color: #787a7c;
+}
+
+.Product-Size {
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-style: normal;
+    color: #787a7c;
+    line-height: 1.063rem;
+}

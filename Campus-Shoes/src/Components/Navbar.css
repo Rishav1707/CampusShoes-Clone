@@ -5,7 +5,11 @@
     justify-content: space-between;
     font-family: Futura, sans-serif;
     color: #171717;
-    position: relative;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #dfe3e8;
 }
 
 .Navbar-left {
@@ -42,12 +46,12 @@
 .Navbar-logo img {
     width: 8.75rem;
     position: absolute;
-    left: 45.3%;
-    top: 1rem;
+    left: 45%;
+    top: 1.2rem;
 }
 
 .Navbar-right {
-    padding-right: 2.5rem;
+    padding-right: 4.5rem;
 }
 
 .Navbar-right ul {

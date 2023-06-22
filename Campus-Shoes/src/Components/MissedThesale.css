@@ -1,0 +1,75 @@
+.missed-the-sale {
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    background-color: #f7f1f0;
+    position: relative;
+}
+
+.missed-sale-container {
+    width: 80%;
+    padding: 5rem;
+    padding-left: 0;
+    padding-bottom: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8.5rem;
+}
+
+.missed-sale-img1 {
+    position: absolute;
+    bottom: 4.8rem;
+    left: 3.7rem;
+}
+
+.missed-sale-img2 {
+    margin-left: 1.3rem;
+    margin-bottom: 0.35rem;
+}
+
+.missed-sale-content {
+    text-align: start;
+}
+
+.missed-sale-content h2 {
+    margin-bottom: 0.8rem;
+    font-family: "New York", "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Times, "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.375rem;
+    color: #343434;
+}
+
+.missed-sale-content p {
+    margin-left: 0;
+    margin-bottom: 2.5rem;
+    font-family: Futura, sans-serif;
+    font-size: 0.92rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #343434;
+}
+
+.missed-sale-content a {
+    text-decoration: none;
+    background-color: #212b36;
+    color: #fff;
+    font-size: 0.813rem;
+    font-family: Futura, sans-serif;
+    font-weight: 400;
+    line-height: 0.813rem;
+    padding: 0.95rem 1.563rem;
+    border: 1px solid #212b36;
+    cursor: pointer;
+    letter-spacing: 0.065rem;
+
+}
+
+.missed-sale-content a:hover {
+    background-color: #c16452;
+    border: none;
+    transform: scale(0);
+    /* transition: background-color .1s, color .1s, border-color .1s, opacity .1s; */
+}
