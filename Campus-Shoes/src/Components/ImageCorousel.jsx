@@ -42,7 +42,7 @@ export default function ImageCorousel() {
           (image, index) =>
             current === index && (
               <div key={image} className="slide">
-                <img src={image} alt="images" />
+                <img src={image} alt="images" loading="lazy" />
               </div>
             )
         )}
@@ -64,7 +64,7 @@ export default function ImageCorousel() {
           (image, index) =>
             current === index && (
               <div key={image} className="slide">
-                <img src={image} alt="images" />
+                <img src={image} alt="images" loading="lazy" />
               </div>
             )
         )}

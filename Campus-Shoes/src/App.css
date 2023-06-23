@@ -20,7 +20,6 @@ body {
   min-width: 100vw;
   background-color: var(--background-color);
   color: var(--font-color);
-  /* font-family: var(--primary-font-family); */
 }
 
 #root {

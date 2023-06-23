@@ -42,16 +42,16 @@ export default function Navbar() {
       <div className="Mobile-Navbar-left">
         <ul>
           <li>
-            <img src={hamburger} />
+            <img src={hamburger} loading="lazy" />
           </li>
           <li>
-            <img src={search} />
+            <img src={search} loading="lazy" />
           </li>
         </ul>
       </div>
       <div className="Navbar-logo">
         <Link to="/">
-          <img src={logo} />
+          <img src={logo} loading="lazy" />
         </Link>
       </div>
       <div className="Navbar-right">
@@ -61,16 +61,16 @@ export default function Navbar() {
           </li>
           <li>
             <Link to="/search">Search </Link>
-            <img className="search-icon" src={search} />
-            <img className="profile-icon" src={profile} />
+            <img className="search-icon" src={search} loading="lazy" />
+            <img className="profile-icon" src={profile} loading="lazy" />
           </li>
           <li>
             <Link to="/pages/wishlist">Wishlist</Link>
-            <img src={wishlist} />
+            <img src={wishlist} loading="lazy" />
           </li>
           <li>
             <Link to="/cart">Cart</Link>
-            <img src={cart} />
+            <img src={cart} loading="lazy" />
           </li>
           <li>
             <a
@@ -80,7 +80,7 @@ export default function Navbar() {
             >
               Stores
             </a>
-            <img src={store} />
+            <img src={store} loading="lazy" />
           </li>
         </ul>
       </div>
