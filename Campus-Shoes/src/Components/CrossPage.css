@@ -9,7 +9,7 @@
     justify-content: space-around;
 }
 
-h6 {
+.Cross-Page-Container h6 {
     margin: 0;
     margin-top: 0.5rem;
     font-size: 1.125rem;
@@ -17,4 +17,16 @@ h6 {
     font-weight: 400;
     line-height: 1.375rem;
     color: #171717;
+}
+
+@media only screen and (max-width: 768px) {
+    .Cross-Page-Container {
+        flex-direction: column;
+        padding: 1.5rem 0;
+        gap: 3.75rem;
+    }
+
+    .Cross-Page-Container h6 {
+        font-size: 1.048rem;
+    }
 }

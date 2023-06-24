@@ -4,19 +4,10 @@
 }
 
 .New-Arrivals-Heading {
-    position: relative;
-}
-
-.left-Arrow {
-    position: absolute;
-    top: 20%;
-    left: 41%;
-}
-
-.right-Arrow {
-    position: absolute;
-    top: 20%;
-    right: 41%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 .New-Arrivals-Heading h1 {
@@ -95,4 +86,47 @@
     font-style: normal;
     color: #787a7c;
     line-height: 1.063rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .New-Arrivals-Heading {
+        justify-content: start;
+        gap: 0.5rem;
+        padding-left: 0.6rem;
+    }
+
+    .New-Arrivals-Heading h1 {
+        font-size: 1.625rem;
+    }
+
+    .New-Arrivals-Image {
+        width: 14rem;
+        height: 20.875rem;
+    }
+
+    .Wishlist-button img {
+        width: 1.125rem;
+    }
+
+    .Product-Price {
+        margin: 0;
+    }
+
+    .Product-Size {
+        margin: 0;
+        letter-spacing: 0.188rem;
+    }
+
+    .Products-Details {
+        gap: 0.5rem;
+    }
+
+    .Products-Details h4 {
+        margin-bottom: 0;
+    }
+
+    .Products-Details img {
+        width: 1.5rem;
+    }
 }

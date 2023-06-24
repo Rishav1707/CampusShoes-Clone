@@ -56,6 +56,37 @@
 }
 
 .Features-Images img {
-    /* width: 41.563rem; */
     width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .KnowYourShoes-Heading h1 {
+        font-size: 1.625rem;
+        margin-top: 3.75rem;
+    }
+
+    .KnowYourShoes-title p {
+        /* font-size: 1rem;  */
+        margin-top: 0.5rem;
+        margin-bottom: 3.75rem;
+    }
+
+    .Features-Images {
+        width: auto;
+        flex-direction: column;
+        padding: 0 1rem;
+        gap: 3.75rem;
+    }
+
+    .Features-Images-Corousel {
+        width: 100%;
+    }
+
+    .Features-Images h3 {
+        font-size: 1.375rem;
+    }
+
+    .Features-Images p {
+        margin: 0;
+    }
 }

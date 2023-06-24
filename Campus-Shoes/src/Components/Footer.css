@@ -9,7 +9,8 @@
     padding: 3.5rem 3.5rem;
 }
 
-h6 {
+.info h6 {
+    margin: 0;
     font-family: "New York", "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Times, "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
     font-size: 1.125rem;
@@ -177,7 +178,7 @@ strong {
     color: #676869;
 }
 
-.Popular-Searches a::after {
+.Popular-Searches a:not(:last-child):after {
     content: " | ";
 }
 
@@ -203,7 +204,6 @@ strong {
     font-size: 0.8rem;
     font-family: 'Jost', sans-serif;
     color: #676869;
-    padding-right: 2rem;
 }
 
 .copyright a {
@@ -218,4 +218,73 @@ strong {
 .payment-option {
     display: flex;
     gap: 0.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .info {
+        flex-direction: column;
+        padding: 2.5rem 1rem;
+        gap: 3rem;
+    }
+
+    .info h6 {
+        font-size: 1.048rem;
+        text-align: start;
+    }
+
+    .info ul {
+        gap: 0.5rem;
+    }
+
+    .What-In-Store ul,
+    .Company-info ul {
+        margin-top: 0.7rem;
+    }
+
+    .get-in-touch {
+        gap: 1rem;
+    }
+
+    .get-in-touch p {
+        margin: 0;
+        text-align: start;
+    }
+
+    .newsletter {
+        width: 100%;
+        padding-left: 0;
+        gap: 1rem;
+    }
+
+    .newsletter p {
+        margin: 0;
+    }
+
+    .newsletter input {
+        width: 90%;
+    }
+
+    .social-icon {
+        margin-top: 1rem;
+    }
+
+    .Popular-Searches {
+        padding: 0 1rem;
+    }
+
+    .Popular-Searches h2 {
+        font-size: 1.5rem;
+    }
+
+    .lower-Footer-Section {
+        flex-direction: column-reverse;
+        padding: 2.5rem 1rem;
+        padding-bottom: 4rem;
+        gap: 2rem;
+    }
+
+    .lower-Footer-Section p {
+        text-align: start;
+        margin-left: 0;
+    }
 }

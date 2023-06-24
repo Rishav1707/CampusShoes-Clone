@@ -85,12 +85,11 @@
 
 .Navbar-right ul li {
     display: flex;
+    align-items: center;
+    gap: 0.4rem;
 }
 
 .Navbar-right ul li a {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
     text-decoration: none;
     color: #171717;
 }
@@ -114,6 +113,10 @@
         padding-left: 0.7rem;
         display: flex;
         gap: 0.5rem;
+    }
+
+    .Mobile-Navbar-left ul li {
+        display: flex;
     }
 
     .search-icon {

@@ -4,7 +4,7 @@ export default function MissedTheSale() {
   return (
     <section className="missed-the-sale">
       <div className="missed-sale-container">
-        <div>
+        <div className="missed-sale-images">
           <img
             className="missed-sale-img1"
             src="https://cdn.shopify.com/s/files/1/0607/6678/1671/files/Image-1_91c9ae4d-faa3-48d9-b157-365bfe2ba744_720x.jpg?v=1687265584"

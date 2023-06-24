@@ -35,3 +35,21 @@
     background-image: url("https://cdn.shopify.com/s/files/1/0607/6678/1671/files/Chunky_Sneakers_for_Women.jpg?v=1687265246");
     margin-right: 1rem;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .gallery-view1-Image1,
+    .gallery-view1-Image2,
+    .gallery-view2-Image1,
+    .gallery-view2-Image2 {
+        height: 11rem;
+    }
+
+    .gallery-view1-Image2 {
+        margin-right: 0;
+    }
+
+    .gallery-view2-Image2 {
+        margin-right: 0;
+    }
+}

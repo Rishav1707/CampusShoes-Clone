@@ -11,3 +11,9 @@ iframe {
     height: 53.375rem;
     border: none;
 }
+
+@media only screen and (max-width: 768px) {
+    iframe {
+        height: 12.5rem;
+    }
+}
