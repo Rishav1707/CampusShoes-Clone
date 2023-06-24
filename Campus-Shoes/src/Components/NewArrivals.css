@@ -42,6 +42,7 @@
     letter-spacing: .08em;
     text-transform: uppercase;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .New-Arrivals {

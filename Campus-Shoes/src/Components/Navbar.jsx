@@ -50,9 +50,9 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="Navbar-logo">
-        <Link to="/">
+        <a href="http://localhost:5173/">
           <img src={logo} loading="lazy" />
-        </Link>
+        </a>
       </div>
       <div className="Navbar-right">
         <ul>
@@ -60,17 +60,23 @@ export default function Navbar() {
             <Link to="/account/login">Account</Link>
           </li>
           <li>
-            <Link to="/search">Search </Link>
-            <img className="search-icon" src={search} loading="lazy" />
+            <Link to="/search">
+              Search
+              <img className="search-icon" src={search} loading="lazy" />
+            </Link>
             <img className="profile-icon" src={profile} loading="lazy" />
           </li>
           <li>
-            <Link to="/pages/wishlist">Wishlist</Link>
-            <img src={wishlist} loading="lazy" />
+            <Link to="/pages/wishlist">
+              Wishlist
+              <img src={wishlist} loading="lazy" />
+            </Link>
           </li>
           <li>
-            <Link to="/cart">Cart</Link>
-            <img src={cart} loading="lazy" />
+            <Link to="/cart">
+              Cart
+              <img src={cart} loading="lazy" />
+            </Link>
           </li>
           <li>
             <a
@@ -79,8 +85,8 @@ export default function Navbar() {
               rel="noreferrer"
             >
               Stores
+              <img src={store} loading="lazy" />
             </a>
-            <img src={store} loading="lazy" />
           </li>
         </ul>
       </div>
