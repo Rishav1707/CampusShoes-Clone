@@ -11,11 +11,13 @@ import Wishlist from "./Pages/Wishlist";
 import Cart from "./Pages/Cart";
 import Navbar from "./Components/Navbar";
 import DiscountBanner from "./Components/DiscountBanner";
+import MobileMenu from "./Components/MobileMenu";
 import "./App.css";
 
 function App() {
   return (
     <BrowserRouter>
+      <MobileMenu />
       <DiscountBanner />
       <Navbar />
       <Routes>

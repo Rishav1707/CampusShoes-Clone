@@ -1,0 +1,48 @@
+.Mobile-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .Mobile-menu {
+        display: block;
+        width: 88%;
+        height: 42.1rem;
+        position: fixed;
+        left: 0;
+        z-index: 1000;
+        background-color: #fff;
+        border-right: 1px solid #dfe3e8;
+        will-change: transform;
+        transition: transform .5s cubic-bezier(.55, .03, .37, .96);
+        transform: translate(0);
+    }
+
+    .Cancel-Button {
+        display: flex;
+        justify-content: end;
+        padding: 1rem 1.3rem;
+        padding-bottom: 0.8rem;
+        border-bottom: 1px solid #dfe3e8;
+    }
+
+    .Menu-item ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .Menu-item li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .Menu-item a {
+        display: flex;
+        text-decoration: none;
+        font-size: 1.063rem;
+        font-weight: 600;
+        font-family: 'Jost', sans-serif;
+        color: #787a7c;
+        padding: 0.75rem 1.25rem;
+    }
+}
