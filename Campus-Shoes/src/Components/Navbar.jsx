@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import logo from "../assets/Logo.png";
 import search from "../assets/Search.svg";
 import wishlist from "../assets/Like.svg";
@@ -8,7 +9,7 @@ import profile from "../assets/Profile.svg";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
-export default function Navbar() {
+export default function Navbar({ toggleMenu }) {
   return (
     <div className="Navbar-Container">
       <div className="Navbar-left">
@@ -41,7 +42,7 @@ export default function Navbar() {
       </div>
       <div className="Mobile-Navbar-left">
         <ul>
-          <li>
+          <li onClick={toggleMenu}>
             <img src={hamburger} loading="lazy" />
           </li>
           <li>

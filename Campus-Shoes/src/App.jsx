@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 import Home from "./Pages/Home";
 import Mens from "./Pages/Mens";
 import Womens from "./Pages/Womens";
@@ -15,11 +16,17 @@ import MobileMenu from "./Components/MobileMenu";
 import "./App.css";
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  function toggleMenu() {
+    setIsMenuOpen(!isMenuOpen);
+  }
+
   return (
     <BrowserRouter>
-      <MobileMenu />
+      <MobileMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
       <DiscountBanner />
-      <Navbar />
+      <Navbar toggleMenu={toggleMenu} />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/collections/mens-footwear" element={<Mens />} />

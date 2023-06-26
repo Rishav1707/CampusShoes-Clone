@@ -3,8 +3,8 @@
 }
 
 @media only screen and (max-width: 768px) {
+
     .Mobile-menu {
-        display: block;
         width: 88%;
         height: 42.1rem;
         position: fixed;
@@ -12,9 +12,14 @@
         z-index: 1000;
         background-color: #fff;
         border-right: 1px solid #dfe3e8;
-        will-change: transform;
-        transition: transform .5s cubic-bezier(.55, .03, .37, .96);
-        transform: translate(0);
+    }
+
+    .show-menu {
+        display: block;
+    }
+
+    .hide-menu {
+        display: none;
     }
 
     .Cancel-Button {
